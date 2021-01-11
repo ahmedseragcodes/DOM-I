@@ -45,6 +45,7 @@ frontPageHeaderNav.append(lightModeButton);
 
 const ctaHeading=document.querySelector(".cta h1");
 ctaHeading.textContent="DOM IS AWESOME";
+ctaHeading.innerHTML="DOM<br />Is<br />Awesome"
 ctaHeading.style.textAlign="center";
 ctaHeading.style.display="block";
 const ctaButton=document.querySelector(".cta button");
