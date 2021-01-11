@@ -8,6 +8,37 @@ headerNav[3].textContent="Features";
 headerNav[4].textContent="About";
 headerNav[5].textContent="Contact";
 
+const darkModeButton=document.createElement("button");
+darkModeButton.textContent="Dark Mode";
+darkModeButton.style.backgroundColor="white";
+darkModeButton.style.border="none";
+darkModeButton.style.fontSize="1rem";
+darkModeButton.style.position="relative";
+darkModeButton.style.bottom=".25rem";
+
+const lightModeButton=document.createElement("button");
+lightModeButton.textContent="Light Mode";
+lightModeButton.style.backgroundColor="white";
+lightModeButton.style.border="none";
+lightModeButton.style.fontSize="1rem";
+lightModeButton.style.position="relative";
+lightModeButton.style.bottom=".25rem";
+
+
+darkModeButton.addEventListener("click", function(event){
+  document.body.style.backgroundColor="black";
+  document.body.style.color="#03A062";
+})
+
+lightModeButton.addEventListener("click", function(event){
+  document.body.style.backgroundColor="white";
+  document.body.style.color="black";
+})
+
+const frontPageHeaderNav=document.querySelector("nav");
+frontPageHeaderNav.append(darkModeButton);
+frontPageHeaderNav.append(lightModeButton);
+
 //CTA Section 
 
 const ctaHeading=document.querySelector(".cta h1");
@@ -19,6 +50,11 @@ ctaButton.textContent="Get Started";
 
 const ctaImg=document.querySelector(".cta img");
 ctaImg.src="./img/header-img.png";
+
+// ctaButton.addEventListener("click", function(event){
+//   document.body.style.backgroundColor="black";
+//   document.body.style.color="#03A062";
+// })
 
 //Main Content Section
 
