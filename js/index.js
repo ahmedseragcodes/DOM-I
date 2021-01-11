@@ -8,6 +8,8 @@ headerNav[3].textContent="Features";
 headerNav[4].textContent="About";
 headerNav[5].textContent="Contact";
 
+//Dark Mode + Light Mode Button 
+
 const darkModeButton=document.createElement("button");
 darkModeButton.textContent="Dark Mode";
 darkModeButton.style.backgroundColor="white";
